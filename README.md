@@ -4,6 +4,29 @@ Glorytun is a small, simple and secure VPN over [mud](https://github.com/angt/mu
 
 Please visit the [wiki](https://github.com/angt/glorytun/wiki) for how-to guides, tutorials, etc.
 
+## 项目配置
+- 克隆此项目，由于此项目中含有子模块，因此克隆时需要加上`--recursive`参数
+```bash
+$ git clone git@github.com:jun0377/mpudp-glorytun.git --recursive
+```
+- 进入项目源码目录，切换到`stable`分支
+```bash
+$ cd mpudp-glorytun/
+$ git checkout stable
+```
+- 更新子模块，这一步非常重要
+```bash
+$ git submodule update
+```
+- 执行`sodium.sh`
+```bash
+$ ./sodium.sh
+```
+- 编译
+```bash
+$ make
+```
+
 ## Compatibility
 
 Glorytun only depends on [libsodium](https://github.com/jedisct1/libsodium) version >= 1.0.4.
