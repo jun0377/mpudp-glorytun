@@ -6,6 +6,14 @@ Please use the [stable branch](https://github.com/angt/glorytun/tree/stable).
 Visit the [wiki](https://github.com/angt/glorytun/wiki) for how-to guides,
 tutorials, etc.
 
+
+## clone此项目
+- 此项目含有子模块，克隆时需要加上`--recursive`参数
+```bash
+$ git clone git@github.com:jun0377/mpudp-glorytun.git --recursive
+```
+
+
 ## Features
 
 The key features of Glorytun come directly from [mud](https://github.com/angt/mud).
